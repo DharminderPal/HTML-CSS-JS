@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin: 10px 0;
+    }
+
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+      color: #f4a261;
+    }
+
+    .media-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .media-icons a {
+      color: #fff;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .media-icons a:hover {
+      color: #f4a261;
+    }
+
+    .contact-number {
+      font-size: 1rem;
+    }
+
+    .bottom-footer {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bottom-footer .privacy-policy a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .bottom-footer .privacy-policy a:hover {
+      color: #f4a261;
+    }
+    .footer-section {
+  display: block; /* Default to block */
+  padding: 20px;
+  min-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    display: flex; /* Use flex for larger screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Company</h1>
+    <div class="media-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">🔗</a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">▶️</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-section link-boxes">
+        <h3>Home</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/services">Our Services</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/careers">Careers</a></li>
+        </ul>
+      </div>
+
+    <div class="footer-section">
+      <h3>About</h3>
+      <ul>
+        <li><a href="/about">Our Company</a></li>
+        <li><a href="/team">Meet the Team</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/partners">Our Partners</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/service1">Service 1</a></li>
+        <li><a href="/service2">Service 2</a></li>
+        <li><a href="/service3">Service 3</a></li>
+        <li><a href="/service4">Service 4</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <ul>
+        <li class="contact-number">Phone: <a href="tel:+98879887262">+91 8879887262</a></li>
+        <li><a href="mailto:info@company.com">info@company.com</a></li>
+        <li><a href="/contact">Contact Form</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="bottom-footer">
+    <div class="copyright">
+      <p>&copy; 2021 Company</p>
+    </div>
+    <div class="privacy-policy">
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </div>
+
+</body>
+</html>

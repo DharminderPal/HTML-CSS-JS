@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: #04b6ec;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover td {
+            background-color: #d1e7d1;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .collapsed {
+            display: none;
+        }
+
+        .expand {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        .expand:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Deaths</th>
+                <th>Recovered</th>
+                <th>Active Cases</th>
+                <th>Critical Condition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA <span class="expand" onclick="toggleDetails(1)">[Details]</span></td>
+                <td>34,000,000</td>
+                <td>600,000</td>
+                <td>33,000,000</td>
+                <td>400,000</td>
+                <td>5,000</td>
+            </tr>
+            <tr class="collapsed" id="details-1">
+                <td colspan="6">Additional stats and trends can be viewed here.</td>
+            </tr>
+            <tr>
+                <td>India <span class="expand" onclick="toggleDetails(2)">[Details]</span></td>
+                <td>33,000,000</td>
+                <td>400,000</td>
+                <td>32,500,000</td>
+                <td>100,000</td>
+                <td>4,000</td>
+            </tr>
+            <tr class="collapsed" id="details-2">
+                <td colspan="6">Additional stats and trends can be viewed here.</td>
+            </tr>
+            <tr>
+                <td>Brazil <span class="expand" onclick="toggleDetails(3)">[Details]</span></td>
+                <td>22,000,000</td>
+                <td>500,000</td>
+                <td>21,000,000</td>
+                <td>500,000</td>
+                <td>3,000</td>
+            </tr>
+            <tr class="collapsed" id="details-3">
+                <td colspan="6">Additional stats and trends can be viewed here.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleDetails(rowId) {
+            const row = document.getElementById('details-' + rowId);
+            row.classList.toggle('collapsed');
+        }
+    </script>
+
+</body>
+</html>
+
+
+</html>

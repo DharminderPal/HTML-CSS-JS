@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    
+    
+    
+ <input type="text" id="fname">
+    
+    
+    
+    <script>
+
+// function capi(){
+// // let fname = document.getElementsByid("fname");
+// // fname.value = fname.value.toUpperCase();
+// }
+document.getElementById('fname').addEventListener('blur', function() {
+    this.value = this.value.toUpperCase();
+});
+
+// Original string
+let str = 'dharminder kumar singh';
+// Finding index of occurrence of 'Train'
+let index = str.indexOf('singh');
+console.log(index);
+
+
+        // function bubble(n, a) {
+        //     let swipcount = 0;
+        //     for (let i = 1; i < n - 1; i++) {
+        //         for (let j = 1; j < n - 1; j++) {
+                  
+        //             if (a[j] > a[j + 1]) {
+        //                 let temp = a[j];
+        //                 a[j] = a[j + 1];
+        //                 a[j + 1] = temp;
+        //                 swipcount++;
+
+        //             }
+
+        //         }
+
+        //     }
+        //     return {
+        //         a,
+        //         swipcount,
+        //     }
+        // }
+        // let n = 6;
+        // let a = [1, 5, 9, 7, 6,3];
+        // console.log(bubble(n, a));
+
+
+
+        // let arr = [7, 7, 6, 4, 8, 7,3,1];
+        /*  iss quesiton mai ikk hi mai 3 question pouch rkha ahi  phele
+        ****************************
+                    sabsae phel iss mai 1 question (     hihest value max occ 7 hai               )
+                    sabsae phel iss mai 2 question (   iski counting bhi pta krna hai             )
+                    sabsae phel iss mai 3 question (   iski counting bhi pta krnu hai             )
+        
+        ************************************************
+        
+        */
+        // function max(arr) {
+        //     let maxcount = 0;
+        //     let current = 1;
+        //     let maxnumber = arr[0];
+        //     for (let i = 1; i < arr.length; i++) {
+        //         if (arr[i] == arr[i - 1]) {
+        //             current++;
+        //         } else {
+        //             if (current > maxcount) {
+        //                 maxcount = current;
+        //                 maxnumber = arr[i - 1];
+        //             }
+        //         }
+
+        //         current = 1;
+        //     }
+        //     if (current > maxcount) {
+        //         maxcount = current;
+        //         maxnumber = arr[arr.length - 1];
+        //     }
+        //     return maxnumber;
+        // }
+        // console.log(max(arr));
+
+
+
+        // let arr = [5, 6, 9, 8, 7, 4];
+
+        // function max(arr) {
+        //     let maxcount = 0;
+        //     let current = 1;
+        //     let maxnumber = arr[0];
+
+        //     for (let i = 1; i < arr.length; i++) {
+        //         if (arr[i] === arr[i - 1]) {
+        //             current++;
+        //         } else {
+        //             if (current > maxcount) {
+        //                 maxcount = current;
+        //                 maxnumber = arr[i - 1];
+        //             }
+        //             current = 1; // Reset only when current number changes
+        //         }
+        //     }
+
+        //     // Final check for the last counted value
+        //     if (current > maxcount) {
+        //         maxcount = current;
+        //         maxnumber = arr[arr.length - 1];
+        //     }
+
+        //     return maxnumber;
+        // }
+
+        // console.log(max(arr)); // Output: 5
+
+        /*  HCLO HUM DURA QUESTION KJO KI NUMBER KITNI BAAR SORT HUA  WOO COUNT KREGA  THIKA HIA   */
+
+
+
+        // function count(arr,n) {
+            
+            
+        //     let pta_kro_kini_baar_sort_hua = 0;
+            
+        //     for (let i = 0; i < n- 1; i++) {
+        //         for (let j = 0; j < n - 1; j++) {
+        //             if (arr[i] > arr[j + 1]) {
+        //                 let temp = arr[i];
+        //                 arr[i] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //                 pta_kro_kini_baar_sort_hua++;
+        //             }
+        //         }
+        //     }
+        //     return {
+
+        //         pta_kro_kini_baar_sort_hua,
+        //         arr
+
+                                  
+
+        //     }
+        // }
+        // let n=6;
+        // let arr = [1, 5, 9, 7, 6, 3];
+        // console.log(count(arr,n));
+       
+
+
+// sum of digit
+// let n=prompt("enter digit you want add this ");
+// if(n==0){
+//     console.log(n);
+// }else{
+//     let sum=0;
+//     for(let i=0;i<n;i++){
+//       sum = n%10
+//       n =Math.floor(n/10);
+//     }
+// console.log(sum);
+// }
+
+
+
+// let n=76787;
+// if(n==0){
+//     console.log(n);
+// }else{
+    
+//     let count=0;
+//     while(n>0){
+
+//         let digit=n%10;
+
+
+//         if(digit==7){
+//             count++
+//         }
+//         n =Math.floor(n/10);
+//     }
+// console.log(count);
+// }
+
+/* motivational speech 
+
+
+1. to make your parents proud
+2. to conquer your fears
+3. to see your family again
+4. to see your Favorite artist live
+5. to listen to music again
+6. to experience a new culture
+7. to make new friends
+8. to inspire
+9. to have your own children
+10. to adopt your own pet
+11. to make yourself proud
+12. to meet your idols
+13. to laugh until you cry
+14. to feel tears of happiness
+15. to eat your favorite food
+16. to see your siblings grow
+17. to pass school
+18. to get tattoo
+19. to smile until your cheeks hurt
+20. to meet your internet friends
+21. to find someone who loves you like you deserve
+22. to eat ice cream on a hot day
+23. to drink hot chocolate on a cold day
+24. to see untouched snow in the morning
+25. to see a sunset that sets the sky on fire
+26. to see stars light up the sky
+27. to read a book that changes your life
+28. to see the flowers in the spring
+29. to see the leaves change from green to brown
+30. to travel abroad
+31. to learn a new language
+32. to learn to draw
+33. to tell others your story in the hopes of helping them
+34. Puppy kisses.
+35. Baby kisses (the open mouthed kind when they smack their lips on your cheek).
+36. Swear words and the release you feel when you say them.
+37. Trampolines.
+38. Ice cream.
+39. Stargazing.
+40. Cloud watching.
+41. Taking a shower and then sleeping in clean sheets.
+42. Receiving thoughtful gifts.
+43. To hear “I saw this and thought of you."
+44. The feeling you get when someone you love says, “I love you."
+45. The relief you feel after crying.
+46. Sunshine.
+47. The feeling you get when someone is listening to you/giving you their full attention.
+48. Your future wedding.
+49. Your favorite candy bar.
+50. New clothes.
+51. Witty puns.
+52. Really good bread.
+53. Holding your child in your arms for the first time.
+54. Completing a milestone (aka going to college, graduating college, getting married, getting your dream job.)
+55. The kind of dreams where you wake up and can’t stop smiling.
+56. The smell before and after it rains
+57. The sound of rain against a rooftop.
+58. The feeling you get when you’re dancing.
+59. The person (or people) that mean the most to you. Stay alive for them.
+60. Trying out new recipes.
+61. The feeling you get when your favorite song comes on the radio.
+62. The rush you get when you step onto a stage.
+63. You have to share your voice and talents and knowledge with the world because they are so valuable.
+64. Breakfast in bed.
+65. Getting a middle seat in the movie theater.
+66. Breakfast for dinner (because it’s so much better at night than in the morning).
+67. Pray (if you are religious) 
+68. Forgiveness.
+69. Water balloon fights.
+70. New books by your favorite authors.
+71. Fireflies.
+72. Birthdays.
+73. Realizing that someone loves you.
+74. Spending the day with someone like you.
+75. Opportunity to create meaningful and lasting relationships.
+76. Potential to learn, grow, and evolve as a person.
+77. Joy and happiness in the little things.
+78. The power to inspire others.
+79. The ability to create art, music, and other forms of self-expression.
+80. To explore different cultures, traditions, and ways of life.
+81. To make a positive impact on the environment and help protect the planet.
+82. Experience the joys of parenthood and raise a family.
+83. Learn new things and develop new skills.
+84. Create a legacy that will outlive you.
+85. Being wrapped up in a warm bed.
+86. Cuddles
+87. Holding hands.
+88. The kind of hugs when you can feel a weight being lifted off your shoulders. The kind of hug where your breath syncs with the other person’s, and you feel like the only two people in the world.
+89. Singing off key with your best friends.
+90. Road trips.
+91. Spontaneous adventures.
+92. The feeling of sand beneath your toes.
+93. The feeling when the first ocean wave rolls up and envelops your toes and ankles and knees.
+94. Thunderstorms.
+95. Your first (or hundredth) trip to Disneyland.
+96. The taste of your favorite food.
+97. The child-like feeling you get on Christmas morning.
+98. The day when everything finally goes your way.
+99. Compliments and praise.
+100. to look on this moment in 10 years time and realize you did it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+// let n=12456342484841431264813714786147454;
+// if(n==0){
+//     console.log(n);
+// }else{
+//     let sum=0;
+//     for(i=0;i<n;i++){
+//         sum+=n%10;
+//         n=Math.floor(n/10);
+//     }
+//     console.log(sum);
+// }
+
+
+
+// let n = 12456;
+// if (n === 0) {
+//     console.log(1); // Agar n 0 hai, toh digit count 1 hai
+// } else {
+//     let count = 0; // Initialize
+//     while (n > 0) {
+//         n = Math.floor(n / 10); // Last digit ko remove karo
+//         count++; // Count increment karo
+//     }
+//     console.log(count); // Total digit count print karo
+// }
+
+
+
+// class and object
+const student ={
+    fullname : "dharmidner ",
+    marks:94.58,
+    printmarks:function(){
+        console.log("marks = ",this.marks);
+    }
+
+} 
+
+// subarry reverse  
+/*  
+
+Reverse a Subarray
+Given an array arr of size N. Your task is to determine that if by reversing any one subarray can the given array be sorted or not.
+
+You have to complete solve function which consists of arr array of size N as inputs and you have to return boolean answer as output.
+
+Input Format
+The first line of input contains a single integer N.
+
+The second line of input contains N space seperated integers.
+
+Output Format
+Return true, if by reversing any one subarray sorted array can be formed as else false , "Yes" or "No" will be taken care by driver code.
+
+Example 1
+Input
+
+5
+1 2 5 4 3
+*/
+
+
+
+// let n = 5;
+// let a = [1,2,5,4,3];
+//             for (let i = 1; i < n - 1; i++) {
+//                 for (let j = 1; j < n - 1; j++){
+                  
+//                     if (a[j] > a[j + 1]) {
+//                         let temp = a[j];
+//                         a[j] = a[j + 1];
+//                         a[j + 1] = temp;
+                      
+
+//                     }
+
+//                 }
+
+//             }
+        
+//         console.log(a,n);
+
+
+
+
+
+// let arr=[1,5,9,7,6];
+// console.log(arr.sort());
+
+// let arr = [1, 5, 9, 7, 6];
+
+// // Pehle array ko sort karte hain
+// arr.sort((a, b) => a - b);
+// console.log("Sorted array:", arr);
+
+// // Ab index 2 aur last index (index 4) ko swap karte hain
+// let temp = arr[2];
+// arr[2] = arr[arr.length - 1];
+// arr[arr.length - 1] = temp;
+
+// console.log("Array after swapping index 2 and last index:", arr);
+
+
+
+
+
+
+// let arr =[1, 2, 5, 4, 3];
+// let temp = arr[2];
+// arr[2]=arr[4];
+// arr[4]=temp;
+// console.log(arr);
+
+
+
+
+
+// arr=[1,2,3,4,6]
+// let dhar =arr.push();
+// console.log(dhar);
+
+/*
+function abc(a){
+    return a;
+}
+let a="dharmidne"
+console.log(a);
+*/
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

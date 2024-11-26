@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<form method="post">
+
+		<label for="name">Name</label>
+
+		<input type="Text" required id="name" name="name" placeholder="Name">
+
+ 
+
+		<label for="email">Email</label>
+
+		<input type="Email" required id="email" name="email" placeholder="Email">
+
+ 
+
+ 
+
+	   <label for="gender_m">
+
+		<input type="Radio" name="gender" required id="gender_m" >
+
+		</label>
+
+		<label for="gender_f">
+
+		<input type="Radio" name="gender" required id="gender_f" >
+
+		</label>
+ 
+
+       <label for="cars">Car Brands</label>
+
+		<select id="cars" name="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
+			<option value="toyota">Toyota</option>
+			<option value="lamborghini">lamborghini</option>
+			<option value="alto">alto</option>
+		</select>
+
+ 
+
+		<label for="age">Age</label>
+
+		<input type="Number" required id="age" name="age" placeholder="Age">
+
+ 
+
+		<label for="dob">DOB</label>
+
+		<input type="Date" required name="dob" id="dob" >
+
+ 
+
+		<label for="tel">Phone Number</label>
+
+		<input type="Tel"  name="tel" id="tel" placeholder="xxx-xxx-xxxx">
+
+ 
+
+		<label for="password">Password</label>
+
+		<input type="Password" name="password" required id="password" placeholder="Password">
+
+ 
+
+		<label for="tos">I agree to the TOS</label>
+
+		<input type="Checkbox" name="tos" required id="tos">
+
+ 
+
+		<button type="submit">submit</button>
+
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
+</html>
