@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+</style>
+
+<body>
+
+
+    <script>
+
+// synchronous code 
+// console.log("dharmidn");
+// console.log("kumar");
+// console.log("from punjab");
+
+
+
+// // ashynchronous in javscript
+// console.log("hello 01")
+// setTimeout(()=>{
+//     console.log("heelo 02");
+// },1000);
+// console.log("hello0 03")
+
+
+
+    // event loop---machanisam
+
+    // call stack --> LIFO--->last in first out
+    // task queue (callbakc queue or macrotask queue)
+    // microtask queue 
+
+
+
+      console.log("1");
+
+setTimeout(() =>{
+  console.log("2")
+}, 0);
+
+promise.resolve().than(()=>{
+
+ console.log("3") 
+});
+
+promise.resolve().then(()=>{
+
+
+  console.log('4')
+
+});
+
+setTimeout(() =>{
+  console.log("5")
+}, 0);
+
+
+console.log("6");
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
