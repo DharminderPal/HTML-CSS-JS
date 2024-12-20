@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+// promis aynch or await today classs 
+// const mypromise = new Promise((resolve, reject)=>{
+// const success =true;
+
+// setTimeout(()=>{
+
+
+
+// if(true)resolve("is success");
+// else reject("reject");
+
+// },5000);
+
+
+// });
+
+// mypromise
+// .then((result)=>{
+//     console.log("reuslt");
+// })
+// .catch((error)=>{
+//     console.log("error");
+// })
+// .finally(()=>{
+// console.log("promise setttle");
+// })
+
+
+// fun((data1)=>{
+//     func2(data1,(data2)=>{
+// func3(data2,(data3)=>{
+
+// })
+// })
+// })
+function firstFunction(callback) {
+    setTimeout(()=>{
+        console.log("First function");
+        callback();
+    },3000)
+}
+
+function secondFunction() {
+    console.log("Second function");
+}
+firstFunction(secondFunction);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+
+// let p1=new Promise((resolve ,reject)=>{
+//     console.log("promise is pending ")
+//     setTimeout(()=>{
+//         console.log("i am promise and i am  resolved");
+//     },5000);
+// resolve(true);
+// // reject(new Error("i am an error"));
+// });
+
+// let p2=new Promise((reslove ,reject)=>{
+//     console.log("promise is pending ")
+//     setTimeout(()=>{
+//         console.log("i am dhaminder");
+//     },5000);
+
+// reject(new Error("i am an error"));
+// });
+
+// // to get the value ====================================
+// p1.than((value)=>{
+
+//     console.log(value);
+// })
+// p2.catch((error)=>{
+//     console.log("some error occored ")
+// })
+
+
+// //  ===================================================
+
+// // some quesiton we have solve this  promise 
+// let quesiton =new Promise((resolve,reject)=>{
+//     console.log(1);
+// })
+
+// quesiton.then((value)=>{
+//     console.log(value)
+// })
+// quesiton.catch((error)=>{
+// console.log("any terror")
+// })
+
+
+// console.log(p1,p2);
+
+
+// Ek Promise banayein jo ek integer 10 ko reject kare (for example: "Error: Something went wrong"). Phir us Promise ko .catch() ke through handle karen.
+
+// let  reject1 = new Promise((resolve,reject)=>{
+// reject(10);
+
+// });
+// reject1.catch((error)=>{
+//     console.log(error);
+// })
+// ==========================================================
+
+
+// question 3
+// Simulating an Asynchronous Task with setTimeout()
+// let timeout1=new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+// console.log("dharminder ");
+// },5000)
+// });
+ 
+
+// const isEven = (number) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (number % 2 === 0) resolve(`${number} is even`);
+//       else reject(`${number} is odd`);
+//     }, 3000);
+//   });
+// };
+// console.log(isEven)
+
+
+
+
+
+
+let myPromise = new Promise((resolve, reject) => {
+  let isSuccessful = true;  // Change this to false to test reject case
+
+  setTimeout(() => {
+    if (isSuccessful) {
+      resolve("Promise was successful!");
+    } else {
+      reject("Promise failed!");
+    }
+  }, 2000);
+});
+
+myPromise
+  .then((result) => {
+    console.log(result);  // "Promise was successful!" (if successful)
+  })
+  .catch((error) => {
+    console.log(error);  // "Promise failed!" (if rejected)
+  })
+  .finally(() => {
+    console.log("Cleanup actions or final steps go here.");
+  });
+
+
+
+
+
+    </script>
+</body>
+</html>

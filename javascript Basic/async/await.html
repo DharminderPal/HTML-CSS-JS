@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    <script>
+// todya we have asyn or await 
+
+// const mypromise =new  Promise((resolve,reject)=>{
+// const success=true;
+// setTimeout(()=>{
+//     if(success){
+// resolve("ok hai")
+//     }else reject("operation was reject");
+// },5000)
+
+// });
+// mypromise
+// .then((value_pass_ki)=>{
+// console.log(value_pass_ki,"ok hai ")
+// })
+
+// .catch((error)=>{
+// console.log("error ",error)
+// })
+
+
+// .finally(()=>{
+// console.log("promis settle")
+// })
+
+
+
+// =========================================================================
+// callback function
+// inter view qustion of callback fucntion
+// ==========================================================
+// Promise.all
+//  how to us its work  we have 
+ const Promise1 =new Promise((resolve,reject)=>{
+    setTimeout(() => {
+       resolve("aur yeee 5sec ke baad ");
+    }, 5000);
+ });
+
+ const Promise2 =new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+resolve("4sec ke bad print ho ")
+    },4000)
+ })
+ Promise.race([Promise1,Promise2]).then((value_pass_ki)=>{
+    console.log(value_pass_ki);
+ });
+
+
+// async-await
+
+// async used to fecsler aschromnuys code 
+function getdata(){
+    return new Promise((resolve)=>{
+setTimeout(()=>{
+resolve("Resolved");
+},3000);
+    });
+}
+
+function fetchData(){
+    getdata()
+    .then((data)=>{
+console.log(data)
+    })
+    .catch((error)=>{
+        console.log(error);
+    });
+}
+//consumption using async/await
+
+async function fetchData(){
+    try{
+    } catch(error){
+        console.log("error",error);
+    }
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
