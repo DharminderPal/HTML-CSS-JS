@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        // class car{
+
+        // message(){
+        //     console.log("hllo dhdatrmofme");
+        // }
+        // number(){
+        //     console.log(parseInt("6878468"));
+        // }
+        // }
+        // // let a= new car();
+        // // a.message();
+        // // a.number();
+
+
+        // class student{
+        // // constructor ko hmae call nhi krna ada woo khud hi call ho jata hai 
+        // constructor(name ,age){
+        //    this.name=name;
+        //    this.age=age;
+        //     console.log("this is consrtiuctor fuctin ")
+        // }
+
+
+
+        // hello(){
+        //     console.log(`"hello "${this.name} ${this.age}`)
+        // }
+
+        // }
+        // let m = new student("dharmidenr",25); 
+        // let b = new student("somya",22); 
+        // b.name ="huliluia";
+        // b.hello();
+        // m.hello();
+        // b.hello();
+// ===========================================================================================================
+
+        // Create a Person Class:
+        // class person {
+
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+
+        //     }
+
+        //     greet() {
+        //         console.log(`Hello,my name is ${this.name},I am ${this.age} years old.`);
+        //     }
+
+        // }
+
+        // let access = new person("dharmidner", "38");
+        // access.greet();
+
+
+        // // Create an Employee Class:
+        // class Employee {
+        //     constructor(name, age, jobtitle) {
+        //         this.name = name;
+        //         this.age = age;
+        //         this.jobtitle = jobtitle;
+        //     }
+        //     joggreet() {
+        //         console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobtitle}.`);
+        //     }
+        // }
+
+
+        // let some = new Employee("dharmidner", "25", "software developer");
+        // some.joggreet();
+
+
+
+// ===============================================================================================================================================================
+
+
+
+
+
+// class animal{
+
+//    constructor(species){
+// this.species=species;
+//    }
+  
+// makesound(){
+//     console.log("Some sound");
+// }
+
+
+// }
+
+// class cat extends animal{
+//     constructor() {
+//         super("Cat");  // Call the parent constructor with species "Cat"
+//     }
+//     purr(){
+//         console.log("purr");
+//     }
+//     makeSound() {
+//         console.log("Meow");
+//     }
+// }
+
+// class dog extends animal{
+//     constructor() {
+//         super("Dog");  // Call the parent constructor with species "Dog"
+//     }
+    
+//     bark(){
+//         console.log("woof");
+//     }
+//     makeSound() {
+//         console.log("Bark");
+//     }
+// }
+
+// // call the all aniamsls
+// const varibale = new animal();
+// varibale.getSpecies();
+// varibale.makesound();
+
+// // ============================================================
+// // Base class Animal
+
+
+// class Animal {
+//     constructor(species) {
+//         this._species = species; // Private property to store species
+//     }
+
+//     // Getter for species
+//     get species() {
+//         return this._species;
+//     }
+
+//     // Method to log the sound the animal makes
+//     makeSound() {
+//         console.log(`The ${this.species} makes a sound`);
+//     }
+// }
+
+// // Subclass Cat that extends Animal
+// class Cat extends Animal {
+//     constructor(species) {
+//         super(species); // Call the parent class constructor
+//     }
+
+//     // Method to log "purr"
+//     purr() {
+//         console.log("purr");
+//     }
+// }
+
+// // Subclass Dog that extends Animal
+// class Dog extends Animal {
+//     constructor(species) {
+//         super(species); // Call the parent class constructor
+//     }
+
+//     // Method to log "woof"
+//     bark() {
+//         console.log("woof");
+//     }
+// }
+
+// // Example usage
+// const myCat = new Cat("Siamese");
+// myCat.makeSound(); // Output: The Siamese makes a sound
+// myCat.purr(); // Output: purr
+
+// const myDog = new Dog("Golden Retriever");
+// myDog.makeSound(); // Output: The Golden Retriever makes a sound
+// myDog.bark(); // Output: woof
+// ========================================================================================================
+
+
+
+
+
+
+
+// class person{
+//     constructor(name ,age){
+//  this.name=name;
+//  this.age=age;
+
+//     }
+// get name(){
+// return this.name;
+// }
+// set age(age){
+//  this.age;
+// }
+// }
+
+
+
+// class student extends person{
+//     constructor(name, age) {
+//     super(name, age);  // Call the parent constructor
+//   }
+//     study(){
+//         console.log(`${name}`);
+//     }
+// }
+
+
+
+
+// class teacher extends person{
+//     constructor(name, age) {
+//     super(name, age);  
+//   }
+//     teach(){
+//         console.log(`${name}`);
+//     }
+// }
+
+// const reiv= new person('Alice', 20);
+// reiv.study();  // Logs: Alice is studying
+
+// const  suko= new Teacher('Bob', 35);
+// suko.teach();
+
+
+
+
+
+
+
+
+// =====================================================================
+
+// Define the Person class
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;  // Initialize name
+//     this._age = age;   // Initialize age
+//   }
+
+//   // Getter for name
+//   get name() {
+//     return this._name;
+//   }
+
+//   // Setter for age
+//   set age(age) {
+//     this._age = age;
+//   }
+// }
+
+// // Define the Student class that extends Person
+// class Student extends Person {
+//   constructor(name, age) {
+//     super(name, age);  // Call the parent constructor
+//   }
+
+//   // Method to log that the student is studying
+//   study() {
+//     console.log(`${this.name} is studying`);
+//   }
+// }
+
+// // Define the Teacher class that extends Person
+// class Teacher extends Person {
+//   constructor(name, age) {
+//     super(name, age);  // Call the parent constructor
+//   }
+
+//   // Method to log that the teacher is teaching
+//   teach() {
+//     console.log(`${this.name} is teaching`);
+//   }
+// }
+
+// // Example usage:
+// const student = new Student('Alice', 20);
+// student.study();  // Logs: Alice is studying
+
+// const teacher = new Teacher('Bob', 35);
+// teacher.teach();  // Logs: Bob is teaching
+
+
+
+class Person {
+    constructor(name, age) {
+        this._name = name;  // Store name in an internal property
+        this._age = age;    // Store age in an internal property
+    }
+
+    // Getter for name
+    get name() {
+        return this._name;
+    }
+
+    // Setter for age
+    set age(age) {
+        this._age = age;
+    }
+}
+
+class Student extends Person {
+    constructor(name, age) {
+        super(name, age);  // Call the parent constructor
+    }
+
+    // Method for studying
+    study() {
+        console.log(`${this.name} is studying`);  // Access name via `this.name`
+    }
+}
+
+class Teacher extends Person {
+    constructor(name, age) {
+        super(name, age);  // Call the parent constructor
+    }
+
+    // Method for teaching
+    teach() {
+        console.log(`${this.name} is teaching`);  // Access name via `this.name`
+    }
+}
+
+// Example usage
+const reiv = new Student('Alice', 20);  // Create a Student object
+reiv.study();  // Logs: Alice is studying
+
+const suko = new Teacher('Bob', 35);  // Create a Teacher object
+suko.teach();  // Logs: Bob is teaching
+
+</script>
+</body>
+
+</html>
