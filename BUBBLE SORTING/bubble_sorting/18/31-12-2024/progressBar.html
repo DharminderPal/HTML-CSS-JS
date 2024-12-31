@@ -1,0 +1,164 @@
+<!-- this is  prgress bar logic  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+:root {
+    --line-border-fill: rgb(56, 193, 235);
+    --line-border-empty: rgb(197, 197, 197);
+}
+
+body {
+    background-color: #929292;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.proces {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.proces::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 4px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 4px;
+    width: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.circle {
+    background-color: rgb(197, 197, 197);
+    color: gray;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+    border: 3px solid var(--line-border-empty);
+}
+
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
+</style>
+
+<body>
+
+    <div class="main-container">
+        <div class="proces">
+            <div class="progress" id="progress"></div>
+            <div class="circle active" id="circle-1">1</div>
+            <div class="circle" id="circle-2">2</div>
+            <div class="circle" id="circle-3">3</div>
+            <div class="circle" id="circle-4">4</div>
+        </div>
+        <button class="btn" id="prev" disabled>PRE</button>
+        <button class="btn" id="next">NEXT</button>
+    </div>
+
+    <script>
+        const progress = document.getElementById('progress');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const circle = document.querySelectorAll('.circle');
+
+        let currentActive = 1;
+
+        next.addEventListener('click', () => {
+            currentActive++;
+            if (currentActive > circle.length) {
+                currentActive = circle.length;
+            }
+            update();
+        });
+
+        prev.addEventListener('click', () => {
+            currentActive--;
+            if (currentActive < 1) {
+                currentActive = 1;
+            }
+            update();
+        });
+
+        function update() {
+            circle.forEach((circle, idx) => {
+                if (idx < currentActive) {
+                    circle.classList.add('active');
+                } else {
+                    circle.classList.remove('active');
+                }
+            });
+
+            const actives = document.querySelectorAll('.active');
+            progress.style.width = (actives.length / circle.length) * 100 + '%';
+
+            // Toggle button states
+            prev.disabled = currentActive === 1;
+            next.disabled = currentActive === circle.length;
+        }
+    </script>
+
+</body>
+
+</html>
